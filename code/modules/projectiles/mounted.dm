@@ -109,7 +109,19 @@
 		return
 	gun?.do_unique_action(gun, user)
 
-
+///Quick pick up
+/obj/machinery/deployable/mounted/activate(mob/living/user, turn_off)
+	if(!ishuman(user))
+		return
+	if(over_object != user || !in_range(src, user))
+		return
+	var/obj/item/_internal_item = get_internal_item()
+	if(!_internal_item)
+		return
+	if(CHECK_BITFIELD(_internal_item.item_flags, DEPLOYED_WRENCH_DISASSEMBLE))
+		to_chat(user, span_notice("You cannot disassemble [src] without a wrench."))
+		return
+	disassemble(user)
 
 ///This is called when a user tries to operate the gun
 /obj/machinery/deployable/mounted/interact(mob/user)
