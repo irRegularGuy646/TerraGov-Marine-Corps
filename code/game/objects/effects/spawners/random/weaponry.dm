@@ -145,7 +145,7 @@
 		/obj/item/ammo_magazine/rifle/standard_dmr,
 		/obj/item/ammo_magazine/rifle/standard_br,
 		/obj/item/ammo_magazine/rifle/chamberedrifle,
-		/obj/item/ammo_magazine/rifle/bolt,
+		/obj/item/ammo_magazine/packet/bolt,
 		/obj/item/ammo_magazine/rifle/martini,
 		/obj/item/ammo_magazine/pistol/standard_pistol,
 		/obj/item/ammo_magazine/pistol/standard_heavypistol,
