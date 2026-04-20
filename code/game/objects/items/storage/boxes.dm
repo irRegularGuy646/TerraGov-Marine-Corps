@@ -1092,13 +1092,13 @@
 	. = ..()
 	storage_datum.storage_slots = 30
 	storage_datum.set_holdable(can_hold_list = list(
-		/obj/item/ammo_magazine/rifle/bolt,
+		/obj/item/ammo_magazine/packet/bolt,
 		/obj/item/ammo_magazine/rifle/boltclip,
 	))
 
 /obj/item/storage/box/visual/magazine/compact/mosin/packet/full
 	spawn_number = 30
-	spawn_type = /obj/item/ammo_magazine/rifle/bolt
+	spawn_type = /obj/item/ammo_magazine/packet/bolt
 
 /obj/item/storage/box/visual/magazine/compact/mosin/clip/full
 	spawn_number = 30
