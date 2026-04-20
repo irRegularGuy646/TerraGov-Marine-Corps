@@ -447,7 +447,7 @@
 			/obj/item/ammo_magazine/rifle/standard_br = 30,
 			/obj/item/ammo_magazine/rifle/chamberedrifle = 30,
 			/obj/item/ammo_magazine/rifle/boltclip = 30,
-			/obj/item/ammo_magazine/rifle/bolt = 16,
+			/obj/item/ammo_magazine/packet/bolt = 16,
 			/obj/item/ammo_magazine/rifle/martini = 16,
 		),
 		"Shotgun" = list(
@@ -519,7 +519,7 @@
 		/obj/item/ammo_magazine/rifle/standard_br = 60,
 		/obj/item/ammo_magazine/rifle/chamberedrifle = 60,
 		/obj/item/ammo_magazine/rifle/boltclip = 60,
-		/obj/item/ammo_magazine/rifle/bolt = 32,
+		/obj/item/ammo_magazine/packet/bolt = 32,
 		/obj/item/ammo_magazine/rifle/martini = 32,
 		/obj/item/ammo_magazine/shotgun = 32,
 		/obj/item/ammo_magazine/shotgun/buckshot = 32,
