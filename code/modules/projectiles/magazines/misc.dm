@@ -264,3 +264,39 @@
 	w_class = WEIGHT_CLASS_SMALL
 	current_rounds = 165
 	max_rounds = 165
+
+/obj/item/ammo_magazine/packet/martini
+	name = "box of .557/440 rifle rounds"
+	desc = "A box filled with rifle bullets."
+	caliber = CALIBER_557
+	icon_state = ".557"
+	icon = 'icons/obj/items/ammo/packet.dmi'
+	default_ammo = /datum/ammo/bullet/sniper/martini
+	w_class = WEIGHT_CLASS_SMALL
+	current_rounds = 20
+	max_rounds = 20
+	icon_state_mini = "martini"
+
+/obj/item/ammo_magazine/packet/derringer
+	name = "box of .40 rimfire pistol rounds"
+	desc = "A box filled with pistol bullets."
+	icon_state = "derringer"
+	icon = 'icons/obj/items/ammo/packet.dmi'
+	default_ammo = /datum/ammo/bullet/pistol/superheavy/derringer
+	caliber = CALIBER_41RIM
+	current_rounds = 10
+	max_rounds = 10
+	w_class = WEIGHT_CLASS_SMALL
+	icon_state_mini = "ammo_packet"
+
+/obj/item/ammo_magazine/packet/bolt
+	name = "box of 7.62x54mmR rifle rounds"
+	desc = "A box filled with rifle bullets."
+	icon_state = "7.62" //Thank you Alterist
+	icon = 'icons/obj/items/ammo/packet.dmi'
+	default_ammo = /datum/ammo/bullet/sniper/svd
+	caliber = CALIBER_762X54 //Cyka Blyat
+	current_rounds = 20
+	max_rounds = 20 // Real rifle boxes are usually 20 rounds. This works with the new system, four handfuls.
+	w_class = WEIGHT_CLASS_SMALL // CAN throw it in your pocket, friend.
+	icon_state_mini = "mosin"
