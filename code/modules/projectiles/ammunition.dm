@@ -494,6 +494,27 @@ Turn() or Shift() as there is virtually no overhead. ~N
 				user.temporarilyRemoveItemFromInventory(AM)
 				qdel(AM)
 
+
+/obj/item/big_ammo_box/attack_hand_alternate(mob/living/user)
+	if(loc == user)
+		return ..()
+	if(!isturf(loc))
+		to_chat(user, span_warning("[src] must be on the ground to be used."))
+		return
+	if(current_rounds < 1)
+		to_chat(user, span_warning("The [src] is empty."))
+		return
+
+	var/obj/item/ammo_magazine/handful/H = new
+	var/rounds = min(bullet_amount, initial(default_ammo.handful_amount))
+
+	H.generate_handful(ammo_type, caliber, rounds, initial(ammo_type.handful_amount))
+	bullet_amount -= rounds
+
+	user.put_in_hands(H)
+	to_chat(user, span_notice("You grab <b>[rounds]</b> round\s from [src]."))
+	update_icon()
+
 //explosion when using flamer procs.
 /obj/item/big_ammo_box/fire_act(burn_level)
 	if(!bullet_amount)
